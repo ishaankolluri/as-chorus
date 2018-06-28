@@ -1,7 +1,7 @@
 const env = require("./env.json");
 
 const request = new Request(
-  "https://api.airtable.com/v0/appnoXBJsT05s6Jux/Feedback%20Items ",
+  `https://api.airtable.com/v0/${env.AIRTABLE_BASE}/${env.AIRTABLE_VIEW}`,
   {
     method: "get",
     headers: new Headers({
